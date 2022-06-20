@@ -1,0 +1,124 @@
+*,body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.baner{
+
+    width: 100%;
+    height: 70vh;
+    background-color: rgb(190, 188, 185);
+    position: relative;
+}
+
+.menu{
+    position: absolute;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: rgb(227, 232, 233);
+}
+
+
+
+.menu ul{
+    list-style: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+.menu ul li{
+    margin-top: 10px;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: rgb(70, 68, 68);
+    font-size: 0.8em;
+
+}
+.droit{
+    position: absolute;
+    right: 0;
+    width: calc(100% - 200px);
+    height: 100%;
+    background-color: rgb(209, 213, 213);
+}
+.droit .contenue-texte{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(40px, -50%);
+    text-align: center;
+}
+.droit-contain{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.droit .type {
+    margin-top: 10px;
+    color: rgb(48, 47, 47);
+    font-size: 1rem;
+
+}
+.droit .nom {
+    color: black;
+    font-size: 2rem;
+
+    
+}
+.droit .texte {
+    color: aliceblue;
+    font-size: 6rem;
+}
+
+.droit input{
+    border: none;
+    background-color: rgb(220, 38, 38);
+    border-radius: 10px;
+    margin: 10px;
+    margin-top: 50px;
+    width: 200px;
+    padding: 10px;
+}
+
+.droit .card{
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    bottom: 50px;
+    width: 300px;
+    height:90%;
+    background-color: transparent;
+    border: 2px solid black; 
+}
+
+.droit .card img{
+    height: 100%;
+    width: auto;
+}
+
+.section .titre{
+    text-align: center;
+    margin: 20px;
+    font-size: 20px;
+    color: rgb(16, 16, 78);
+}
+.section .row{
+    justify-content:space-around;
+}
+
+.section .card{
+    min-width:250px;
+    max-width: 300px;
+    padding: 0;
+}
+.section .card img{
+    height: auto;
+    width: 100%;
+}
