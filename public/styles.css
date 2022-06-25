@@ -112,18 +112,19 @@ span i{
 .droit .texte-box{
     position: relative;
     text-align: center;
-    display: block;   
+    display: block;
 }
 .droit .texte-box .contenue{
+   
     display: flex;
     align-items: flex-start;
     flex-direction: column;
     justify-content: space-between;
     max-width: 500px;
     position: absolute;
-    top: 50px;
-    left: 50px;
-    transform: translate(-50% -50%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .droit .texte-title{
     font-family: Roboto Condensed, Helvetica Neue,Arial,sans-rerif;
@@ -150,16 +151,16 @@ span i{
 .droit .image-box{
     position: relative;
     text-align: center;
+    width: 50%;
 }
 
 .droit .image-box .contenue{
-    max-width: 300px;
-    max-height: 300px;
+    width: 100%;
     position: absolute;
-    top: 50px;
-    left: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     border-radius: 50%;
-    transform: translate(-50% -50%);
     border-top: 10px solid var(--premcipal);
     border-bottom: 10px solid var(--premcipal);
     overflow: hidden;
@@ -175,8 +176,40 @@ span i{
     transform: scale(1.2);
 }
 
+/* fin */
+
+.section-livrabe{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.section-livrabe .cadre{
+    width: 250px;
+    min-height: 300px;
+
+}
+.section-livrabe .cadre img{
+    width: 100%;
+    height: 248px;
+}
+.section-livrabe .cadre .info{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.section-livrabe .info button{
+    margin: 5px;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #fff;
+    border: 3px solid var(--premcipal);
+}
+
 .section{
-    background-color: white;
     padding: 0;
     margin-bottom: 20px;
 }
@@ -194,8 +227,19 @@ span i{
 .section .section-title p{
     margin-bottom: 8;
 }
-section .section-title .plus{
+.section .section-title .plus{
     background-color: var(--premcipal);
+    cursor: pointer;
+    border-radius: 3px;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section-title .plus p{
+
+
 }
 
 .section .row{
@@ -213,9 +257,12 @@ section .section-title .plus{
     margin: 5px;
     padding: 0;
 }
+.section .card:hover{
+    box-shadow: 3px 3px 6px rgb(176, 173, 173);
+}
 .section .card .image{
     width: 100%;
-    height: 260px;
+    height: auto;
 }
 .section .card img{
     height: 100%;
@@ -244,3 +291,32 @@ section .section-title .plus{
 
 }
 
+
+
+
+
+/* media query */
+
+@media screen and (min-with:785) and ( max-width: 992px) {
+    .droit .image-box .contenue {
+      width: 200px;
+      height: 200px;
+    }
+}
+
+@media all and (max-width: 700px){
+    .droit .image-box {
+      display: none;
+      background-color: blueviolet;
+    }
+}
+
+@media screen and ( max-width: 444px){
+    .droit {
+        display: none;
+        background-color: aqua;
+    }
+    .menu{
+        width: 100%;
+    }
+}
