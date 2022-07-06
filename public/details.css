@@ -37,7 +37,68 @@
     flex-direction: column;
     justify-content: space-around;
     padding: 0 10px;
-
+}
+.section .details-description .prix-article{
+    margin: 10px 0;
+    font-weight: 900;
+    
 }
 
-.section .details-description 
+.section .details-description .status{
+    color: rgb(26, 29, 25);
+    font-weight: bold;
+}
+.section .details-description .status span{
+    color: rgb(81, 79, 79);
+}
+.section .details-description .quantite{
+    margin: 10px 0;
+}
+.section .details-description .select{
+    background-color: aqua;
+    display: flex;
+    flex-flow: row nowrap;
+    height: 35px;
+    width: 140px;
+    border: 1px solid rgb(89, 87, 87);
+}
+.details-description .select button{
+    width: 35px;
+    border: none;
+    border: 1px solid rgb(185, 182, 182);
+    font-weight: bold;
+    font-size: larger;
+}
+.details-description .select input{
+    border: none;
+    text-align: center;
+    width: 70px;
+}
+.section .details-description .action{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.section .details-description .commande{
+    margin: 10px 0;
+}
+
+
+.section .details-description .commande button{
+    background-color: var(--premcipal);
+    padding: 10px 10px;
+    width: 200px;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.section .details-description .ajoute button{
+    padding: 10px 10px;
+    width: 200px;
+    border: 2px solid var(--premcipal);
+    border-radius: 5px;
+    font-weight: bold;
+}
