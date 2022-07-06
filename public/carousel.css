@@ -1,38 +1,3 @@
-*,body{
-    padding: 0px;
-    margin: 0px;
-}
-
-.main{
-    width: 100vw;
-    height: 100vh;
-    position: relative;
-}
-
-.carousel{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: aquamarine;
-    height: 300px;
-    width: 100%;
-    box-sizing: inherit;
-    overflow: scroll;
-   
-}
-
-.carousel .card{
-    width: 200px;
-    height: 500px;
-    background-color: rgb(127, 131, 134);
-    display: inline-block;
-    margin-left: 1rem;
-    font-size: x-large;
-}
-
-
-
-
 
 
 .MultiCarousel { 
@@ -43,7 +8,7 @@
     position:relative; 
 }
 .MultiCarousel{ 
-    Height: 189px;
+    Height: 300px;
 }
 .MultiCarousel .MultiCarousel-inner { 
     transition: 1s ease all; 

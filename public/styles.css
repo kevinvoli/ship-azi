@@ -10,24 +10,33 @@
     
 }
 .main{
-    
+    padding-top: 50px;
 }
 
 .baner{
 
     width: 100%;
-    height: 70vh;
+    height: 80vh;
     background-color: var(--secondair);
     position: relative;
 }
 .navbar{
+    position:fixed ;
     background-color: white;
     border-bottom: 1px var(--premcipal) solid;
     padding: 5 auto;
+    top: 0;
+    z-index: 100;
+    width: 100%;
 }
 .navbar .contenue{
     display: flex;
     justify-content: baseline;
+}
+
+.navbar .navbar-brand{
+    color: var(--premcipal);
+    font-weight: bold;
 }
 
 .navbar .recherche{
@@ -48,8 +57,8 @@
     width: 60px;
     height: 100%;
     background-color: var(--premcipal);
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 span i{
     position: absolute;
@@ -184,6 +193,7 @@ span i{
     align-items: center;
     padding: 20px;
     margin: 20px 0;
+    flex-flow: row wrap;
 }
 
 .section-livrabe .cadre{
@@ -207,11 +217,19 @@ span i{
     padding: 5px;
     background-color: #fff;
     border: 3px solid var(--premcipal);
+    transition: all .3 ease;
+}
+
+.section-livrabe .info button:hover{
+    background-color: var(--premcipal);
+    border: 3px solid black;
 }
 
 .section{
-    padding: 0;
-    margin-bottom: 20px;
+    padding: 10px;
+    margin: 20px 0;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+
 }
 
 .section .section-title{
@@ -223,9 +241,11 @@ span i{
     border-bottom: 1px solid var(--premcipal);
     width: 100%;
     height: 50px;
+
 }
 .section .section-title p{
     margin-bottom: 8;
+
 }
 .section .section-title .plus{
     background-color: var(--premcipal);
@@ -243,8 +263,17 @@ span i{
 }
 
 .section .row{
-   justify-content: center;
+    width: 100%;
+    border-radius: 10px;
 }
+.section .row .slick-arrow{
+    background-color: rgb(158, 185, 158);
+    width: 50px;
+    height: 50px;
+    z-index: 4;
+    border-radius: 50%;
+}
+
 .box-title{
     background-color: rgb(249, 251, 251);
 }
@@ -252,10 +281,10 @@ span i{
 .section .card{
     min-width:200px;
     max-width: 230px;
-    height: 310px;
     margin-bottom: 20px;
     margin: 5px;
     padding: 0;
+    border-radius: 5px;
 }
 .section .card:hover{
     box-shadow: 3px 3px 6px rgb(176, 173, 173);
@@ -267,29 +296,84 @@ span i{
 .section .card img{
     height: 100%;
     width: 100%;
+    object-fit: cover;
 }
 
 .section .info{
     padding: 5px;
     text-align: start;
-    height: 60px;
+    padding: 5 10px;
 }
 .info p{
     padding-bottom: 0;
     display: inline
 
 }
-.info .nom{
+.info .type{
     margin-bottom: 5px;
     font-size: small;
+}
+.info .flex{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
 }
 
 .info .prix{
     color:  var(--premcipal);
     font-weight: bold;
     text-align: center;
+    font-size:small;
 
 }
+
+.info .bouton{
+    cursor: pointer;
+    background-color: var(--premcipal);
+    padding: 5px;
+    border-radius: 5px;
+    font-size: x-small;
+    display: inline-block;
+}
+
+
+footer{
+    background-color: rgba(41, 39, 39, 0.868);
+    color: #fff;
+}
+
+footer .contact{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row;
+    padding: 10px;
+}
+
+footer .logo{
+    margin: 10px;
+    color: var(--premcipal);
+}
+
+footer .abonne{
+    margin: 10px;
+}
+
+footer .social{
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 10px;
+}
+
+footer .facebook,footer .instagram,footer .whatsap{
+    margin: 0 10px;
+    font-size: 30px;
+}
+
+
+
+
 
 
 
